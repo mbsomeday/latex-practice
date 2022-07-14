@@ -1,0 +1,22 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ww-style}
+
+\RequirePackage{amsmath,amsthm,bm}
+\RequirePackage{hologo,verbatim,fancyvrb,layout,multicol}
+\RequirePackage[normalem]{ulem}
+\RequirePackage{colortbl,tabularx,multirow,makecell,booktabs}
+\RequirePackage{graphicx,xcolor,float,subcaption}
+\RequirePackage{makeidx}
+\RequirePackage[inner=1in,outer=1.5in,vmargin=1in,marginparwidth=1in]{geometry}
+\RequirePackage{tikz}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% lshort 用到的自定义环境
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 每章最前的介绍内容环境 intro
+%
+\newenvironment{intro}
+{\advance\leftskip\parindent\advance\rightskip\parindent\sffamily}%
+{\par\vspace*{2ex minus 1.5ex}}
